@@ -22,7 +22,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     };
 
     fetchExercisesData();
-  });
+  }, []);
 
   const handleSearch = async () => {
     if (search) {

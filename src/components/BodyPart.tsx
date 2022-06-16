@@ -3,13 +3,14 @@ import { Stack, Typography, Button } from "@mui/material";
 import Icon from "../assets/icons/gym.png";
 
 const BodyPart = ({ item, bodyPart, setBodyPart }) => {
+  console.log(bodyPart, item);
   return (
     <Stack
       alignItems='center'
       justifyContent='center'
       className='bodyPart-card'
       sx={{
-        borderTop: bodyPart === item ? "4px, solid #ff2625" : "",
+        borderTop: "4px, solid #ff2625",
         backgroundColor: "fff",
         borderBottomLeftRadius: "20px",
         width: "270px",
